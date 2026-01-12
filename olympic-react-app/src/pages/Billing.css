@@ -1,0 +1,100 @@
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.billing-card {
+  background: #111827;
+  color: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.billing-form {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.billing-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.billing-form input {
+  margin-top: 4px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  min-width: 180px;
+}
+
+.billing-panel {
+  background: #111827;
+  
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+.billing-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.billing-table th {
+  background:#f3f4f6;
+  color: #111827;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.billing-table td {
+  padding: 10px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.paid {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.unpaid {
+  color: red;
+  font-weight: 600;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn.success {
+  background:#10b981;
+  color: white;
+}
+
+.btn.warn {
+  background: red;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}

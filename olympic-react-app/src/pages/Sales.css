@@ -1,0 +1,317 @@
+/* ---------------------------------------
+   GLOBAL COLORS (matches sidebar theme)
+   --------------------------------------- */
+:root {
+  --bg-dark: #111827;       /* Sidebar / section header */
+  --bg-card: #1f2937;       /* Card background */
+  --bg-input: #f9fafb;      /* Light inputs */
+  --text-light: #f9fafb;
+  --text-dark: #111827;
+  --border-dark: #374151;
+
+  --primary: #3b82f6;       /* Blue */
+  --success: #10b981;       /* Green */
+  --hover-opacity: 0.85;
+}
+
+/* ---------------------------------------
+   CARD
+   --------------------------------------- */
+
+.total-amount-box{
+  color: #111827;
+}
+.card {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: var(--bg-dark);
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: var(--text-light);
+}
+
+/* ---------------------------------------
+   FILTERS
+   --------------------------------------- */
+.filter-grid input,
+.filter-grid select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-dark);
+  background: var(--bg-input);
+  color: var(--text-dark);
+}
+
+.filter-grid button.btn-apply {
+  background: var(--primary);
+  color: var(--text-light);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ---------------------------------------
+   NEW SALE FORM
+   --------------------------------------- */
+.new-sale-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: white; /* Matches sidebar */
+  padding: 20px;
+  border-radius: 10px;
+  border-collapse: collapse;
+  border: #1f2937;
+
+}
+
+/* Item row */
+.sale-item-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sale-item-row input {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border-dark);
+  background: var(--bg-input);
+  color: var(--text-dark);
+}
+
+/* Price type buttons */
+.price-buttons button {
+  background: var(--bg-input);
+  color: var(--text-dark);
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-right: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.price-buttons button.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Add item button */
+.btn-add-item {
+  background: var(--success);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Sale meta section */
+.sale-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.sale-meta select,
+.sale-meta input {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border-dark);
+  background: var(--bg-input);
+  color: var(--text-dark);
+}
+
+/* Submit sale */
+.btn-submit-sale {
+  background: var(--bg-dark);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+/* ---------------------------------------
+   SALES TABLE
+   --------------------------------------- */
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sales-table th,
+.sales-table td {
+  padding: 10px;
+  border: 1px solid var(--border-dark);
+  text-align: center;
+}
+
+.sales-table th {
+  background: var(--bg-dark);
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.sales-table td {
+  background: var(--bg-card);
+  color: var(--text-light);
+}
+
+/* ---------------------------------------
+   PAGINATION
+   --------------------------------------- */
+.pagination button {
+  background: var(--border-dark);
+  color: var(--text-light);
+  padding: 6px 12px;
+  margin: 0 4px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination span {
+  font-weight: 500;
+  margin: 0 8px;
+}
+
+/* Hover effect for all buttons */
+button:hover {
+  opacity: var(--hover-opacity);
+}
+/* ---------------------------------------
+   FILTER MODAL POPUP
+   --------------------------------------- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-card {
+  background: #1f2937; /* Dark card */
+  padding: 30px;
+  border-radius: 12px;
+  width: 420px;
+  max-width: 90%;
+  color: #f9fafb;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  animation: scaleIn 0.2s ease-in-out;
+}
+
+.modal-card h3 {
+  margin: 0 0 16px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Filter Grid Layout */
+.filter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.filter-grid input,
+.filter-grid select {
+  
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background: #f9fafb;
+  color: #111827;
+  font-size: 0.95rem;
+}
+
+/* Date inputs span full width */
+.filter-grid input[type="date"] {
+  grid-column: span 2;
+}
+
+/* Apply Button */
+ .btn-primary {
+      background: #2563eb;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.filter-grid .btn-primary:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* Total Filtered Sales Box */
+.total-amount-box {
+  background: #111827;
+  color: #f9fafb;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin: 12px 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.btn-delete{
+  background: #e53935;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    
+}
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-grid input[type="date"],
+  .filter-grid .btn-primary {
+    grid-column: span 1;
+  }
+}

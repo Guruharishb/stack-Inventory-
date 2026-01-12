@@ -1,0 +1,119 @@
+/* grid + card utilities for dashboard */
+.page-title { font-size:22px; font-weight:700; margin-bottom:14px; color:#0f1724; }
+.grid { display:grid; gap:16px; }
+.grid-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:8px; }
+.card { background:#fff; border-radius:10px; padding:16px; box-shadow:0 6px 18px rgba(2,6,23,0.06); }
+.card-title { color:#64748b; font-size:13px; }
+.card-value { font-size:20px; font-weight:700; margin-top:8px; }
+.section-title { font-size:18px; font-weight:700; margin-bottom:8px; }
+.panel { background:#fff; padding:12px; border-radius:8px; box-shadow:0 6px 18px rgba(2,6,23,0.04); }
+.muted { color:#64748b; }
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+button.danger {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.page-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #0f172a;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.employee-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: #fff;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.submit-btn{
+    background: #2563eb;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.submit-btn:hover {
+  background: #1d4ed8;
+}
+
+.submit-btn:disabled {
+  background: #475569;
+  cursor: not-allowed;
+}
+
+.error {
+  grid-column: span 2;
+  color: #f87171;
+}
+
+.success {
+  grid-column: span 2;
+  color: #4ade80;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .employee-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full-width,
+  .submit-btn {
+    grid-column: span 1;
+  }
+}
+
