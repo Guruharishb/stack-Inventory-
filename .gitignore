@@ -3,7 +3,9 @@ node_modules/
 
 # environment variables
 .env
-./express/routes/
+
+# express routes (if intentional)
+express/routes/*
 
 # production build
 dist/
