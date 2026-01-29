@@ -5,7 +5,7 @@ node_modules/
 .env
 
 # express routes (if intentional)
-express/routes/*
+express/routes/**.js
 
 # production build
 dist/
